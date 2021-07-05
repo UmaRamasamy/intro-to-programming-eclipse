@@ -6,7 +6,7 @@ copyright.innerHTML = `Uma Maheswari &copy; ${thisYear}`;
 footer.appendChild(copyright);
 
 
-let skills = ['Oracle9i/10g','SQL','Windows','Mac OS','HTML','CSS'];
+let skills = ['Oracle9i/10g','SQL','Windows','Mac OS','HTML','CSS','JavaScript'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
@@ -30,8 +30,8 @@ messageForm.addEventListener('submit',(event)=>{
         const messageSection= document.getElementById('messages');
          const messageList = messageSection.querySelector('ul');
           const newMessage = document.createElement('li');
-              newMessage.innerHTML = `<a href="mailto:${Email}">${Name}</a> wrote: <span> 
-               ${Message}</span>`;
+              newMessage.innerHTML = `<a href="mailto:${Email}"> ${Name} </a> wrote: <span> 
+                ${Message}</span>`;
                console.log(newMessage);
 
           const removeButton = document.createElement('button');
@@ -46,8 +46,6 @@ messageForm.addEventListener('submit',(event)=>{
     removeButton.addEventListener('click',(e)=>{
           const entry =e.target.parentNode; 
           entry.remove();
-      
-
   })
      newMessage.appendChild(removeButton);
         newMessage.appendChild(editButton);
