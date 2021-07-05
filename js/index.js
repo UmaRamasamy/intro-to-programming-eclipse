@@ -6,7 +6,7 @@ copyright.innerHTML = `Uma Maheswari &copy; ${thisYear}`;
 footer.appendChild(copyright);
 
 
-let skills = ['Oracle9i/10g','SQL','Windows','Mac OS','HTML','CSS','JavaScript'];
+let skills = ['Oracle9i/10g','SQL','Windows','Mac OS','HTML','CSS','JavaScript','Git'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
