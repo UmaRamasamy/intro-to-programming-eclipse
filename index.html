@@ -3,19 +3,23 @@
   <head>
      <title>Portfolio</title>
      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
 
      <meta name="description" content ="Resume">
+     <link rel = "stylesheet" href="css/index.css">
   </head>
   <body>
     <div>
     <header>
-       <img src ="image/profilepic.jpg" alt="My Picture">
-       <h1>Uma Maheswari Ramasamy</h1>
-        <nav>
+      <h1>Uma Maheswari Ramasamy</h1>
+       <img src ="image/profilepic.jpg" alt="My Picture" class="center">
+       
+        <nav class= "nav">
           <ul>
             <li> <a href = "#about">About</a></li>
             <li> <a href = "#experience">Experience</a></li>
             <li> <a href = "#contact">Contact</a></li>
+            <li><a href = "#contact">My Works</a></li>
           </ul>
           </nav>
     </header>
@@ -35,24 +39,24 @@
     </section>
     <section id = "skills">
       <h2>Skills</h2>
-      <ul></ul>
+      <ul class ="skill-section"></ul>
 
     </section>
 
     <section id= "contact">
      <h2>Connect Me</h2>
         <ul>
-         <li><strong>Phone</strong>:571 366 0758</li>
+         <li><strong>Phone</strong>:571-366-0758</li>
          <li><strong>E-mail</strong>:umaramasamy99@gmail.com</li>
          
       </ul>
      </section>
-     <a href ="#">backtotop</a>
+     
     </main>
          
   </div>  
-  </head>
-  <section>
+  <div class="form-div">
+  <section class= "form-style">
     <h2>Leave a Message</h2>
     <form name="leave_message">
     <label for="name">Name:</label><br>
@@ -64,17 +68,22 @@
      <button type="submit">Submit</button>
      </form>
   </section>
+</div>
   <br>
 
- 
+   
    <section id="messages">
     <h2>Messages</h2>
-    <ul></ul>
+    <ul class= "comments"></ul>
 
     </section>
+ 
   
+
+  </body>
   <footer></footer>
-  <script></script>
+  <a href ="#" style="color:blue;">backtotop</a>
+  
   <script src = "js/index.js"></script>
 </body>
         
