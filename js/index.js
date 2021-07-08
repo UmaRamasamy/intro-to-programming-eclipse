@@ -53,5 +53,32 @@ messageForm.addEventListener('submit',(event)=>{
       
       messageForm.reset();
 
-      
+
 });
+
+
+
+   // Assignment 6-1
+      
+        const githubRequest = new XMLHttpRequest();
+        githubRequest.open("GET", "https://api.github.com/users/UmaRamasamy/repos");
+        githubRequest.send();
+
+        
+        githubRequest.addEventListener('load', function(){
+        const repositories = JSON.parse(this.response);
+          console.log(repositories);
+        
+       const projectSection = document.getElementById('projects');
+       const projectList = projectSection.querySelector('ul');
+       for (let i = 0; i < repositories.length; i++){
+         const project = document.createElement('li');
+         project.innerText = repositories[i].name
+         projectList.appendChild(project)
+       }
+      })
+       
+       
+        
+
+    
