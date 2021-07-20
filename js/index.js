@@ -59,7 +59,7 @@ messageForm.addEventListener('submit',(event)=>{
 
 
    // Assignment 6-1
-      
+      /** 
         const githubRequest = new XMLHttpRequest();
         githubRequest.open("GET", "https://api.github.com/users/UmaRamasamy/repos");
         githubRequest.send();
@@ -76,9 +76,28 @@ messageForm.addEventListener('submit',(event)=>{
          project.innerText = repositories[i].name
          projectList.appendChild(project)
        }
-      })
+      }) */
+
+      // Assignment 6-2
+        fetch('https://api.github.com/users/UmaRamasamy/repos')
+           .then(response => response.json())
+          .then(data => load(data))
+          .catch(err => console.log('Request Failed', err)); // Catch errors
+       
+      function load(data){
+                   const projectSection = document.getElementById('projects');
+                    const projectList = projectSection.querySelector('ul');
+                  for (let i = 0; i < data.length; i++){
+                      const project = document.createElement('li');
+                    project.innerHTML =`<a href = '${data[i].html_url}' target = '_blank' }> ${data[i].name}</a>  created on ${data[i].created_at.slice(0,10)}`;
+                    projectList.appendChild(project)
+                  }
+                }
+      
+          
+    
        
        
         
 
-    
+  
