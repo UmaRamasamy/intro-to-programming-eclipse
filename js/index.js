@@ -27,25 +27,25 @@ messageForm.addEventListener('submit',(event)=>{
       
       console.log(Name,Email,Message);
 
-        const messageSection= document.getElementById('messages');
-         const messageList = messageSection.querySelector('ul');
-          const newMessage = document.createElement('li');
-              newMessage.innerHTML = `<a href="mailto:${Email}"> ${Name} </a> wrote: <span> 
-                ${Message}</span>`;
-               console.log(newMessage);
+     const messageSection= document.getElementById('messages');
+    const messageList = messageSection.querySelector('ul');
+    const newMessage = document.createElement('li');
+     newMessage.innerHTML = `<a href="mailto:${Email}"> ${Name} </a> wrote: <span> 
+    ${Message}</span>`;
+    console.log(newMessage);
 
-          const removeButton = document.createElement('button');
-              removeButton.innerText = 'remove';
-              removeButton.type ='button';
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'remove';
+  removeButton.type ='button';
  // Creation of editButton             
-        const editButton = document.createElement('button');
-             editButton.innerText = 'edit';
-             editButton.type ='button';
+    const editButton = document.createElement('button');
+    editButton.innerText = 'edit';
+    editButton.type ='button';
         
         
     removeButton.addEventListener('click',(e)=>{
-          const entry =e.target.parentNode; 
-          entry.remove();
+     const entry =e.target.parentNode; 
+    entry.remove();
   })
      newMessage.appendChild(removeButton);
         newMessage.appendChild(editButton);
@@ -83,16 +83,15 @@ messageForm.addEventListener('submit',(event)=>{
            .then(response => response.json())
           .then(data => load(data))
           .catch(err => console.log('Request Failed', err)); // Catch errors
-       
-      function load(data){
-                   const projectSection = document.getElementById('projects');
-                    const projectList = projectSection.querySelector('ul');
-                  for (let i = 0; i < data.length; i++){
-                      const project = document.createElement('li');
-                    project.innerHTML =`<a href = '${data[i].html_url}' target = '_blank' }> ${data[i].name}</a>  created on ${data[i].created_at.slice(0,10)}`;
-                    projectList.appendChild(project)
-                  }
-                }
+ function load(data){
+   const projectSection = document.getElementById('projects');
+  const projectList = projectSection.querySelector('ul');
+  for (let i = 0; i < data.length; i++){
+  const project = document.createElement('li');
+  project.innerHTML =`<a href = '${data[i].html_url}' target = '_blank' }> ${data[i].name}</a>  created on ${data[i].created_at.slice(0,10)}`;
+   projectList.appendChild(project)
+  }
+}
       
           
     
