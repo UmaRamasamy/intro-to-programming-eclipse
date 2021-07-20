@@ -7,29 +7,54 @@
 
      <meta name="description" content ="Resume">
      <link rel = "stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     
   </head>
   <body>
     <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+      <section>
     <header>
-      <h1>Uma Maheswari Ramasamy</h1>
-       <img src ="image/profilepic.jpg" alt="My Picture" class="center">
-       
+      <h1>My Portfolio</h1>    
         <nav class= "nav">
           <ul>
             <li> <a href = "#about">About</a></li>
             <li> <a href = "#experience">Experience</a></li>
             <li> <a href = "#contact">Contact</a></li>
-            <li><a href = "#myworks">My Works</a></li>
+            <li><a href = "#projects">My Works</a></li>
            <!-- <li><a href = "#certification">Certification</a></li>-->
           </ul>
-          </nav>
+         </nav>
     </header>
-    <main class="main">
+  </section>
+    <section>
+       <div class="hello">
+        <h2>Uma Maheswari Ramasamy</h2>   
+        <a href="#contact" class="button">Contact Me</a>
+        <div class="container2">
+          <img src ="image/profilepic.jpg" alt= "My Picture" class="center">
+         <p>"I have realized that becoming a master of karate was not about learning 4,000 moves <br>but  about doing just a handful of moves 4,000 times."</p>
+        
+      </div>
+     
+       
+    </div>
+       
+  </section> 
+    <!-- </div> -->
+
+    
     <section id = "about">
+      <div class = "box1">
       <h2>About</h2>
         <p>
-          Hi my name is Uma, student at <em>Code the Dream</em> mastering the required skills to become a front end developer. I believe in my quick learning skills and love to work with new technology.
+           My name is Uma, student at <em>Code the Dream</em> mastering the required skills to become a front end developer. I believe in my quick learning skills and love to work with new technology.
        </p>
+       </div>
     </section>
 
     <section id="experience">
@@ -38,9 +63,12 @@
           Worked as Subject Matter Expert for Symantec/ Norton antivirus. Main focus to provide telephonic support to customer across North America as well email and chat support. Provided support for Windows/Mac operating system and used CRM ticketing tool for customer information, also indulged in virus removal, testing beta version and finding bugs, creating knowledge base.
       </p>
     </section>
+    
     <section id = "skills">
       <h2>Skills</h2>
       <ul class ="skill-section"></ul>
+      </section>
+     
 
     </section>
     <section id= "projects">
@@ -52,17 +80,15 @@
      <h2>Connect Me</h2>
         <ul>
          <li><strong>Phone</strong>:571-366-0758</li>
-         <li><strong>E-mail</strong>:umaramasamy99@gmail.com</li>
-         
-      </ul>
+         <li><strong>E-mail</strong>:umaramasamy99@gmail.com</li> 
+        </ul>
+    
      </section>
-     
-    </main>
-         
-  </div>  
-  <div class="form-div">
+    
+  
   <section class= "form-style">
     <h2>Leave a Message</h2>
+    <div class="form-div">
     <form name="leave_message">
     <label for="name">Name:</label><br>
      <input type ="text" name="name" required><br>
@@ -73,7 +99,7 @@
      <button type="submit">Submit</button>
      </form>
   </section>
-</div>
+
   <br>
 
    
@@ -83,10 +109,20 @@
 
     </section>
  
-  
+  </div>
 
   </body>
-  <footer></footer>
+  <footer> 
+    <div class="socialconnect">
+      <a href="#" class="fa fa-google fa-2x"></a>
+      <a href="https://codepen.io/SUVAG/" target="_blank">
+        <i class="fa fa-codepen fa-2x"></i></a>
+      
+        <a href="https://github.com/UmaRamasamy" target="_blank">
+        <i class="fa fa-github  fa-2x"></i></a>
+        <i class="fa fa-phone fa-2x"></i>
+      </div>  
+  </footer>
   <a href ="#" style="color:blue;">backtotop</a>
   
   <script src = "js/index.js"></script>
