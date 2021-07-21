@@ -307,6 +307,27 @@ footer{
     
   }  
   
+@media only screen and (max-width: 600px){
+    header{
+        display:inline-block;
+        width:100%;
+        text-align:center;
+        margin:auto;
+    }
+    img{
+        margin-top: 150px;
+        margin-left:-100px;
+    }
+    .container2{
+        display:block;
+    }
+     .nav ul{
+        flex-direction:column
+    }
+    .nav ul li{
+      padding:0.5rem;
+    }
+  }
 
       @media(min-width:1025px){
           header{
